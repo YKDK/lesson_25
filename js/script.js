@@ -386,7 +386,6 @@ const footer = document.querySelector('.footer');// звертаємось до 
 console.log(footer); 
 
 document.addEventListener('click', search);// кладемо на весь документ прослуховування з функцією search
-document.addEventListener('keyup', search);// кладемо на весь документ прослуховування з функцією search
 
 const form = document.querySelector('.form__input');// шукаєм елемент з класом form__input
 console.log(form);
@@ -409,12 +408,22 @@ function search(event) {
   if (event.target.closest('.form__input')) {
     event.stop.Propagation;// зупиняємо всплиття щоб не зникав інпут....чомусь видає помилку в консоль як починаю вводити
   }
+  if (event.target.closest('.counter')) {
+    event.stop.Propagation;// зупиняємо всплиття щоб не зникав інпут....чомусь видає помилку в консоль як починаю вводити
+  }
+  if (event.target.closest('.form__button')) {
+    event.stop.Propagation;// зупиняємо всплиття щоб не зникав інпут....чомусь видає помилку в консоль як починаю вводити
+  }
   if (!event.target.closest('.action')) {
     footer.classList.remove('_active');// видаляємо клас _active якщо при кліку незнаходимо клас .action__button
   }
+
+};
+document.addEventListener('keyup', searchClose);// кладемо на весь документ прослуховування з функцією search
+
+function searchClose(event) {
   if (event.code === 'Escape') {
     footer.classList.remove('_active');
   }
-
-};
+}// добавляємо закритяя пошуку по клавіші escape  
 

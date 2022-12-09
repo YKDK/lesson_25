@@ -56,26 +56,28 @@ footer{
 
 
 .form {
- max-width: 50%;
- margin: 0 auto;
+ 
   display: none;
 }
 .footer._active .form{
  display: block;
+ max-width: 50%;
+ margin: 0 auto;
 }
 
 .form__input {
   padding: 13px 16px;
-  background: #e0dddd;
+  background: #646363;
   border: 1px solid #D7DADD;
   border-radius: 4px;
   width: 100%;
   font-size: 1.25rem;
+
 }
 
 .form__input::placeholder{
   line-height: 1.6;
-  color: #0a34ee98;
+  color: #d2d5e5;
   font-size: 1.25rem;
 
 }
@@ -111,4 +113,21 @@ footer{
 .action__button:focus{
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
 }
+.form__search{
 
+  position: relative;
+}
+.form__button{
+  position: absolute;
+    right: 30px;
+    bottom: 15%;
+    
+    
+}
+.form__button img{
+  width: 200%;
+  
+}
+.counter {
+  display: inline-block;
+}
