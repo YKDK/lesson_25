@@ -1,0 +1,114 @@
+.header{
+  background: yellow;
+}
+
+.block__main{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #794f45;
+  padding: 10px;
+  font-size: 20px;
+  text-align: start;
+  margin: 10px 0;
+  position: relative;
+}
+
+.page,
+header {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title{
+  max-width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.875rem;
+  color: red;
+  font-weight: 700;
+  background: rgba(230, 232, 210, 0.541);
+}
+
+.button {
+  padding: 1.25rem 4rem;
+  display: inline-block;
+  margin: 0 auto;
+  background: blue;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: .9375rem;
+}
+
+.mouse-block{
+  width: 300px;
+  height: 300px;
+  background: rgb(10, 222, 42);
+}
+footer{
+  font-size: 1.25rem;
+}
+
+
+
+.form {
+ max-width: 50%;
+ margin: 0 auto;
+  display: none;
+}
+.footer._active .form{
+ display: block;
+}
+
+.form__input {
+  padding: 13px 16px;
+  background: #e0dddd;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.form__input::placeholder{
+  line-height: 1.6;
+  color: #0a34ee98;
+  font-size: 1.25rem;
+
+}
+
+.form__input:focus{
+  outline: 2px solid #D7DADD;
+}
+
+
+.action {
+  margin-bottom: 20px;
+}
+.action__button {
+  font-size: 20px;
+  font-weight: 700;
+  background: turquoise;
+  padding: .625rem 40px;
+  border-radius: .9375rem;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.62);
+}
+.footer._active .action__button {
+  display: none;
+}
+
+.action__button:hover{
+  background-color: #794f45;
+}
+
+.action__button:focus{
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+}
+
